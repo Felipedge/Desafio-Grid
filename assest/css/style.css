@@ -1,13 +1,30 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Mukta&family=Roboto:ital,wght@0,300;1,100&display=swap');
 
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+.grid-container {
+    font-family: 'Lato', roboto;
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+        "navbar navbar navbar navbar navbar navbar"
+        "menu main main main main main"
+        "footer footer footer footer footer footer ";
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 8% auto 5%;
 
-
+    background-color: #d2daed;
+}
 .navbar {
     grid-area: navbar;
     background-color: #858282;
 
 }
-.tipo{
+
+.tipo {
     color: grey;
 }
 
@@ -27,39 +44,29 @@
     gap: 10px;
     margin-top: 50px;
     margin-right: 100px;
-    
+
 }
-.footer{
+
+.footer {
     grid-area: footer;
     margin-top: 10px;
     text-align: center;
     border: solid 1px black;
 }
-.producto{
+
+.producto {
     border: solid 1px black;
 
-    
+
 }
 
 
-.grid-container {
-    font-family: 'Lato', roboto;
-    display: grid;
-    width: 100%;
-    grid-template-areas:
-        "navbar navbar navbar navbar navbar navbar"
-        "menu main main main main main"
-        "footer footer footer footer footer footer ";
-    grid-template-columns: 25% 75%;
-    grid-template-rows: 10% auto 15;
-    
-    background-color: #d2daed;
-}
+
 
 .lista {
     list-style: none;
-    
-    
+
+
 }
 
 .main-img {
@@ -69,5 +76,5 @@
 .main-precio {
     color: #706f6f;
     padding: 10px;
-    
+
 }
