@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Mukta&family=Roboto:ital,wght@0,300;1,100&display=swap');
+
+
+
+.navbar {
+    grid-area: navbar;
+    background-color: #858282;
+
+}
+.tipo{
+    color: grey;
+}
+
+.menu {
+    grid-area: menu;
+    height: 100%;
+    border: solid 1px black;
+}
+
+.main {
+    grid-area: main;
+    background-color: #d2daed;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+    border: 2px;
+    gap: 10px;
+    margin-top: 50px;
+    margin-right: 100px;
+    
+}
+.footer{
+    grid-area: footer;
+    margin-top: 10px;
+    text-align: center;
+    border: solid 1px black;
+}
+.producto{
+    border: solid 1px black;
+
+    
+}
+
+
+.grid-container {
+    font-family: 'Lato', roboto;
+    display: grid;
+    width: 100%;
+    grid-template-areas:
+        "navbar navbar navbar navbar navbar navbar"
+        "menu main main main main main"
+        "footer footer footer footer footer footer ";
+    grid-template-columns: 25% 75%;
+    grid-template-rows: 10% auto 15;
+    
+    background-color: #d2daed;
+}
+
+.lista {
+    list-style: none;
+    
+    
+}
+
+.main-img {
+    width: 100%;
+}
+
+.main-precio {
+    color: #706f6f;
+    padding: 10px;
+    
+}
